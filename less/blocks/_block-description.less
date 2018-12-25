@@ -1,0 +1,36 @@
+.block-description {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.block-description__header {
+	position: relative;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	font-size: 37px;
+	line-height: 50px;
+	font-weight: 500;
+
+	&:after {
+    	position: absolute;   
+		content: "";
+		right: 0;
+		bottom: -24px;
+		display: block;
+		width: 30px;
+		height: 3px;
+		background-color: #000;   
+	}
+}
+
+.block-description__content {
+	padding-left: 16px;
+	padding-right: 10px;
+	font-family: 'Playfair Display';
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: 400;
+	color: @grey;
+}
+

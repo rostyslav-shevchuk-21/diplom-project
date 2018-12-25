@@ -1,0 +1,74 @@
+.top-slider {
+	height: 100vh;
+	padding-top: 600px;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.top-slider--bg1 {
+	background-image: url("../img/slider-bg/hero1.jpg");
+}
+
+.top-slider--bg2 {
+	background-image: url("../img/slider-bg/hero2.jpg");
+}
+
+.top-slider--bg3 {
+	background-image: url("../img/slider-bg/hero1.jpg");
+}
+
+.top-slider--bg4 {
+	background-image: url("../img/slider-bg/hero2.jpg");
+}
+
+.top-slider__title {
+	font-size: 48px;
+	line-height: 56px;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.top-slider__price {
+	font-family: 'Helvetica';
+	font-size: 36px;
+	line-height: 60px;
+	font-weight: 300;
+	color: #FFF;
+	text-align: center;
+	float: left;
+	margin-right: 35px;
+}
+
+.top-slider__button {
+	font-family: 'Helvetica';
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+	cursor: pointer;
+
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.2);
+
+	display: inline-block;
+	padding: 10px;
+	margin-top: 14px;
+	
+	&:hover, &:focus {
+		text-decoration: none;
+		background-color: #000;
+		color: @red;
+	}
+
+	&:active {
+		color: #FFA000;
+	}
+}

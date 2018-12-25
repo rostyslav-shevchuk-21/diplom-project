@@ -1,0 +1,800 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+body {
+  font-family: 'Raleway';
+}
+.block {
+  background: #FFDB4C;
+  padding: 20px;
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+.nav-wrapper {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #FFF;
+  z-index: 100;
+}
+.navigation {
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 5px;
+}
+.navigation__link {
+  display: inline-block;
+  color: #282828;
+  text-decoration: none;
+  margin-right: 55px;
+}
+.navigation__link:last-child {
+  margin-right: 0;
+}
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+  color: #e2574c;
+  text-decoration: none;
+}
+.social-icon {
+  padding-top: 6px;
+}
+.social-icon__item {
+  width: 32px;
+  height: 32px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f2f2f2;
+  border-radius: 50%;
+  background-color: #FFF;
+  float: left;
+  margin-right: 12px;
+  padding: 3px 6px;
+}
+.social-icon__item:last-child {
+  margin-right: 0;
+}
+.social-icon__item--mr {
+  margin-right: 15px;
+}
+.top-slider {
+  height: 100vh;
+  padding-top: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top-slider--bg1 {
+  background-image: url("../img/slider-bg/hero1.jpg");
+}
+.top-slider--bg2 {
+  background-image: url("../img/slider-bg/hero2.jpg");
+}
+.top-slider--bg3 {
+  background-image: url("../img/slider-bg/hero1.jpg");
+}
+.top-slider--bg4 {
+  background-image: url("../img/slider-bg/hero2.jpg");
+}
+.top-slider__title {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.top-slider__price {
+  font-family: 'Helvetica';
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 300;
+  color: #FFF;
+  text-align: center;
+  float: left;
+  margin-right: 35px;
+}
+.top-slider__button {
+  font-family: 'Helvetica';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 10px;
+  margin-top: 14px;
+}
+.top-slider__button:hover,
+.top-slider__button:focus {
+  text-decoration: none;
+  background-color: #000;
+  color: #e2574c;
+}
+.top-slider__button:active {
+  color: #FFA000;
+}
+.button-block {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #e2574c;
+  color: #FFF;
+  text-align: center;
+  padding: 18px;
+  display: inline-block;
+  border-radius: 3px;
+}
+.button-block:hover,
+.button-block:focus {
+  text-decoration: none;
+  background-color: #000;
+  color: #e2574c;
+}
+.button-block:active {
+  color: #FFA000;
+}
+.button-block--ml-95 {
+  margin-left: 95px;
+}
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+.top-slider-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+/* Styling Next and Prev buttons */
+.top-slider-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.top-slider-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+/* Styling Pagination*/
+.top-slider-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+.top-slider-theme .owl-controls .owl-page span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 5px 7px;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+.top-slider-theme .owl-controls .owl-page.active span,
+.top-slider-theme .owl-controls.clickable .owl-page:hover span {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  background: #fff;
+}
+.top-slider-theme .owl-controls {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+}
+/* If PaginationNumbers is true */
+.top-slider-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+.block-description {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.block-description__header {
+  position: relative;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-size: 37px;
+  line-height: 50px;
+  font-weight: 500;
+}
+.block-description__header:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -24px;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+}
+.block-description__content {
+  padding-left: 16px;
+  padding-right: 10px;
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #797979;
+}
+.benefit-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #FAFAFA;
+  text-align: center;
+}
+.benefit-block__img {
+  height: 30px;
+  margin-bottom: 20px;
+}
+.benefit-block__img img {
+  display: inline-block;
+}
+.benefit-block__header {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.benefit-block__text {
+  font-family: 'Playfair Display';
+  font-size: 14px;
+  line-height: 24px;
+  color: #797979;
+}
+.prices-block {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  background-color: #F6F6F6;
+}
+.prices-description {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #797979;
+}
+.prices-description--margin {
+  margin-bottom: 60px;
+}
+.heading-h1 {
+  position: relative;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 300;
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.heading-h1 span {
+  font-weight: 500;
+}
+.heading-h1:after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  content: "";
+  display: block;
+  width: 110px;
+  height: 3px;
+  background-color: #e2574c;
+}
+.heading-h1--medium {
+  font-weight: 500;
+  text-align: center;
+  color: #FFF;
+  margin-bottom: 90px;
+}
+.heading-h1--0:after {
+  left: 0;
+  transform: translateX(0%);
+}
+.package {
+  text-align: center;
+  background-color: #FFF;
+  margin-bottom: 30px;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+}
+.package--mb-50 {
+  margin-bottom: 50px;
+}
+.package__img {
+  margin-bottom: 26px;
+}
+.package__name {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.package__location {
+  font-family: 'Playfair Display';
+  font-size: 15px;
+  color: #797979;
+  margin-bottom: 18px;
+}
+.package__price {
+  font-family: 'Helvetica';
+  font-size: 16px;
+  color: #e2574c;
+  margin-bottom: 29px;
+}
+.package__desc {
+  font-family: 'Helvetica';
+  font-size: 13px;
+  color: #797979;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.package__desc ul {
+  margin: 0;
+  padding: 0;
+}
+.package__desc ul li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 20px;
+}
+.package__desc ul li:after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #c0c0c0;
+  width: 4px;
+  height: 4px;
+  border-radius: 25px;
+  bottom: 6px;
+  left: 115%;
+}
+.package__desc ul li:last-child:after {
+  display: none;
+}
+.agent-slider {
+  padding-top: 80px;
+}
+.agent-slider__name {
+  font-family: 'Playfair Display';
+  font-size: 25px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.agent-slider__desc {
+  margin-bottom: 30px;
+}
+.agent-slider__desc p {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #797979;
+}
+.agent-slider__contacts-icon {
+  float: left;
+  margin-right: 10px;
+}
+.agent-slider__contacts-phone {
+  float: left;
+  margin-right: 25px;
+}
+.agent-slider__contacts-phone p {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+}
+.agent-slider__contacts-email a {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  color: #e2574c;
+}
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+.agent-slider-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+/* Styling Next and Prev buttons */
+.agent-slider-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.agent-slider-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+/* Styling Pagination*/
+.agent-slider-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+.agent-slider-theme .owl-controls .owl-page span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  margin: 5px 7px;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 2px solid #c0c0c0;
+}
+.agent-slider-theme .owl-controls .owl-page.active span,
+.agent-slider-theme .owl-controls.clickable .owl-page:hover span {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  border: 2px solid #e2574c;
+  background: #e2574c;
+}
+.agent-slider-theme .owl-pagination {
+  position: absolute;
+  top: 15px;
+  left: 643px;
+}
+/* If PaginationNumbers is true */
+.agent-slider-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+.get-started {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #F3F2F2;
+}
+.get-started__heading {
+  font-size: 37px;
+  font-weight: 300;
+}
+.get-started__heading span {
+  font-weight: 700;
+}
+.testimonial-slider {
+  height: 575px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background-image: url("../img/slider-bg/testimonials-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.testimonial-slider__text {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.testimonial-slider__name {
+  font-family: 'Playfair Display';
+  font-size: 20px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+}
+.testimonial-slider__name span {
+  font-weight: 700;
+}
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+.testimonial-slider-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+/* Styling Next and Prev buttons */
+.testimonial-slider-theme .owl-controls .owl-buttons div {
+  position: absolute;
+  width: 22px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.testimonial-slider-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.owl-prev {
+  top: 20px;
+  left: -191px;
+  background-image: url(../img/icons/arrows/arrow-left.png);
+}
+.owl-next {
+  top: 20px;
+  right: -191px;
+  background-image: url(../img/icons/arrows/arrow-right.png);
+}
+/* Styling Pagination*/
+.testimonial-slider-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+.testimonial-slider-theme .owl-controls .owl-page span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 5px 7px;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+.testimonial-slider-theme .owl-controls .owl-page.active span,
+.testimonial-slider-theme .owl-controls.clickable .owl-page:hover span {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  background: #fff;
+}
+/* If PaginationNumbers is true */
+.testimonial-slider-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+.partners {
+  padding-top: 85px;
+  padding-bottom: 105px;
+}
+.partners__heading {
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 300;
+}
+.partners__heading span {
+  font-weight: 500;
+}
+.partners__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1150px;
+  margin: 0 auto;
+}
+.footer {
+  background-color: #303030;
+  padding-top: 77px;
+  padding-bottom: 60px;
+  color: #FFF;
+}
+.footer__logo {
+  margin-bottom: 15px;
+}
+.footer__title {
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.footer__nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: 'Playfair Display';
+  font-size: 15px;
+  line-height: 30px;
+}
+.footer__nav li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2px;
+}
+.footer__nav a {
+  text-decoration: none;
+  color: #FFF;
+}
+.footer__nav a:hover {
+  text-decoration: none;
+  color: #e2574c;
+}
+.footer__contacts {
+  font-family: 'Playfair Display';
+  font-size: 15px;
+  line-height: 23px;
+}
+.footer__address {
+  margin-bottom: 15px;
+}
+.footer__phone {
+  margin-bottom: 15px;
+}
+.footer__phone p {
+  margin: 0;
+}
+.footer__email a {
+  color: #e2574c;
+}
+/*# sourceMappingURL=main.css.map */

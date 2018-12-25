@@ -1,0 +1,35 @@
+.nav-wrapper {
+	padding-top: 20px;
+	padding-bottom: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #FFF;
+	z-index: 100;
+}
+
+.navigation {
+	font-family: 'Playfair Display';
+	font-size: 18px;
+	line-height: 30px;
+	padding-top: 5px;
+}
+
+.navigation__link {
+	display: inline-block;
+	color: #282828;	
+	text-decoration: none;
+	margin-right: 55px;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+	
+	
+	&:hover, &:focus, &:active {
+		color: @red;
+		text-decoration: none;
+	}
+}
+

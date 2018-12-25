@@ -1,0 +1,7 @@
+[2018-10-21 16:54:57] layer "lisa.gerrard@realhome.com": Unsupported extension: com
+[2018-10-21 16:54:57] layer "+ 7 (123) 456-78-99": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-10-21 16:54:57] layer "g+": Expected end of input but "+" found.
+[2018-10-21 16:54:57] layer "google +": Expected end of input but "+" found.
+[2018-10-21 16:54:57] layer "info@realhome.com": Unsupported extension: com
+[2018-10-21 16:54:57] layer "g+": Expected end of input but "+" found.
+[2018-10-21 16:54:57] layer "google +": Expected end of input but "+" found.
