@@ -4,8 +4,8 @@
 
 ### Использовал:
 
-- фреймворк Bootstrap
-- препроцесор LESS
+- фреймворк Bootstrap 3
+- CSS препроцессор LESS
 - плагин Owl-Carousel
 - BEM naming
 
