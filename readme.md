@@ -7,6 +7,7 @@
 - фреймворк Bootstrap
 - препроцесор LESS
 - плагин Owl-Carousel
+- BEM naming
 
 [**Онлайн демо**](http://shevchukweb.zzz.com.ua/my-works/real-home/index.html)
 
