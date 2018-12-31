@@ -11,3 +11,5 @@
 
 [**Онлайн демо**](http://shevchukweb.zzz.com.ua/my-works/real-home/index.html)
 
+### Результат:
+Проект сделан в рамках обучения в WebCademy.ru. 
