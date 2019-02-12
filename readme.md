@@ -9,7 +9,7 @@
 - плагин Owl-Carousel
 - BEM naming
 
-[**Онлайн демо**](http://shevchukweb.zzz.com.ua/my-works/real-home/index.html)
+[**Онлайн демо**](https://rostyslav-shevchuk-21.github.io/diplom-project/)
 
 ### Результат:
 Проект сделан в рамках обучения в WebCademy.ru. 
